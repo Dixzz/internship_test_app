@@ -1,0 +1,19 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="fontFamily">@font/prod</item>
+        <item name="android:fontFamily">@font/prod</item>
+    </style>
+
+    <style name="text" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">₹</item>
+        <item name="android:textColor">#CC7EFF7E</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

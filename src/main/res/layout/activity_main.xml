@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg">
+
+        <TextView
+            android:text="List of regions"
+            android:paddingTop="10dp"
+            android:paddingStart="14dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loading"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:alpha="0"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="search.json"
+            app:lottie_repeatCount="-1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:elevation="0dp"
+            android:fadeScrollbars="false"
+            android:paddingStart="@dimen/twenty"
+            android:paddingTop="50dp"
+            android:paddingEnd="@dimen/twenty"
+            android:requiresFadingEdge="vertical"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:scrollbarTrackVertical="@color/track_color_scroll"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@color/white"
+            android:scrollbars="vertical" />
+
+        <FrameLayout
+            android:alpha="0"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:id="@+id/fab_con"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                app:elevation="0dp"
+                app:fabCustomSize="35dp" />
+
+            <TextView
+                android:id="@+id/counter_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elevation="1dp"
+                android:text="1"
+                android:textColor="@color/black" />
+        </FrameLayout>
+    </FrameLayout>
+</layout>

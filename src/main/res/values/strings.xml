@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Regions</string>
+    <string name="connect_to_net">Connect to internet</string>
+</resources>
